@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
  
 
     <title>HeroPixels Packaking-Tool</title>
@@ -81,10 +79,10 @@ if (isset($_POST["submitJson"])) {
         )
     );
     
-    // encode array to json
+ 
     $json_manifest = json_encode($array_manifest);
     
-    //write json to file
+    
     if (file_put_contents("Content/skin_pack/manifest.json", $json_manifest))
         echo "Die Manifest.json Datei wurde erfolgreich hochgeladen";
     else 
